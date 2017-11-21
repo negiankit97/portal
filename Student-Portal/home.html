@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Hostel and transportation</a></li>
+                <li><a href="#">Guidance counsellor</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+</header>
+  <head>
+        <title>portal homepage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="text-center">
+        <h2>STUDENT PORTAL</h2></div>  
+  </head>
+  <body>
+    <br><br><br>
+      <center><button type="button" id="register" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Enroll Details</button></center>
+      <br>
+      <table class="table table-striped" id="table">
+        <thead>
+          <th> </th>
+          <th>ROLL NO:</th>
+          <th>NAME:</th>
+          <th>EMAIL:</th>
+          <th>EDIT/DELETE:</th>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" id="btnClose">&times;</button>
+            <h1 class="modal-title ">Student Details</h1>
+          </div>
+          <div class="modal-body">
+            <form id="form1">
+              <div class="form-group">
+                  <label for="roll" class="text-primary">ROLL NO :</label>
+                  <input type="number" class="form-control" id="roll">
+              </div>
+              <div class="form-group">
+                <label for="name" class="text-primary">NAME :</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="text-primary">EMAIL :</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <button type="reset" class="btn btn-danger" style="display:inline">Reset</button>
+              <button type="button" id="editBtn" class="btn btn-success" style="display:inline;display:none">Edit</button>
+              <button type="button" id="submitBtn" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="btnClose">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <br><br><br><br><br><br><br>
+  <footer><div class="text-center"><a href="#"class="fa fa-facebook fa-2x"></a><a href="#"class="fa fa-snapchat-ghost"></a><a href="#"class="fa fa-google"></a></footer>
+</html>
